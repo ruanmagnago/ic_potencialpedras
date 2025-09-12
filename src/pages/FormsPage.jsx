@@ -32,43 +32,57 @@ export default function FormsPage() {
               <div
                 key={form.id}
                 className="rounded-2xl bg-white/5 border border-white/10 
-              shadow-[0_0_30px_rgba(0,179,255,0.2)] p-6 flex flex-col gap-4"
+              shadow-[0_0_30px_rgba(0,179,255,0.2)] p-6 flex flex-col gap-4 justify-between"
               >
                 <h2 className="text-lg font-semibold">{form.nome}</h2>
 
-                <div className="flex gap-2 mt-auto">
-                  <button
-                    onClick={() => navigate(form.path)}
-                    className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
-                  border border-white/10 hover:border-white/20 transition"
-                  >
-                    Abrir
-                  </button>
-                  <button
-                    onClick={() => setActiveFormPreview(form)}
-                    className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
-                  border border-white/10 hover:border-white/20 transition"
-                  >
-                    Pré-visualizar
-                  </button>
-                </div>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => copyLink(form.path)}
-                    className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
+                {form.path ? (
+                  <>
+                    <div className="flex gap-2 mt-auto">
+                      <button
+                        onClick={() => navigate(form.path)}
+                        className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
+                              border border-white/10 hover:border-white/20 transition"
+                      >
+                        Abrir
+                      </button>
+                      <button
+                        onClick={() => setActiveFormPreview(form)}
+                        className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
+                           border border-white/10 hover:border-white/20 transition"
+                      >
+                        Pré-visualizar
+                      </button>
+                    </div>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => copyLink(form.path)}
+                        className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
                   border border-white/10 hover:border-white/20 transition
                   bg-gradient-to-r from-[#00E5A8] to-[#00B3FF]"
-                  >
-                    Copiar Link
-                  </button>
-                  {/* <button
-                  onClick={() => navigate(form.path)}
-                  className="flex-1 px-3 py-2 rounded-xl text-sm font-medium
-                  border border-white/10 hover:border-white/20 transition"
-                >
-                  Respostas
-                </button> */}
-                </div>
+                      >
+                        Copiar Link
+                      </button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex">
+                      <a
+                        href={form.link}
+                        target={
+                          form.link.startsWith("http") ? "_blank" : "_self"
+                        }
+                        rel="noreferrer"
+                        className="flex-1 px-3 py-2 rounded-xl text-sm font-medium text-center
+          border border-white/10 hover:border-white/20 transition
+          bg-gradient-to-r from-[#00E5A8] to-[#00B3FF]"
+                      >
+                        Acessar
+                      </a>
+                    </div>
+                  </>
+                )}
               </div>
             ))}
         </div>
