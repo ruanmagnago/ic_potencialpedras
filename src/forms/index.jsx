@@ -91,4 +91,9 @@ export const forms = [
     path: "/forms/solicitacao_compra",
     component: Form_SolicitacaoCompra,
   },
+  {
+    id: "externo",
+    nome: "EX - Controle de Manutenção - Keepfy",
+    link: "https://app.keepfy.com/service-orders?tab=overview",
+  },
 ];
