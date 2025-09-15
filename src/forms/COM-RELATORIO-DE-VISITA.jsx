@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 
-export default function Form_PedidoDeCompra() {
+export default function Form_RelatorioDeVisita() {
   return (
     <>
       <div
@@ -13,12 +13,12 @@ export default function Form_PedidoDeCompra() {
         <Header />
 
         <iframe
-          id="JotFormIFrame-252545735143053"
-          title="COM-PEDIDO DE COMPRA"
+          id="JotFormIFrame-252546013817051"
+          title="COM - RELATÓRIO DE VISITA"
           onload="window.parent.scrollTo(0,0)"
           allowtransparency="true"
           allow="geolocation; microphone; camera; fullscreen; payment"
-          src="https://form.jotform.com/252545735143053"
+          src="https://form.jotform.com/252546013817051"
           frameborder="0"
           className="min-w-full max-w-full h-[80vh] border-2 border-neutral-700 "
         ></iframe>

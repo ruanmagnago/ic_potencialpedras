@@ -5,7 +5,7 @@ import Form_ValePedagio from "./ADM-VALE_PEDAGIO";
 import Form_AdmissaoColaborador from "./DP-ADMISSAO_COLABORADOR";
 import Form_OvacaoContainer from "./COMEX-OVACAO_CONTAINER";
 import Form_PedidoDeCompra from "./COM-PEDIDO_DE_COMPRA";
-import Form_PedidoDeVenda from "./COM-PEDIDO_DE_VENDA";
+import Form_RelatorioDeVisita from "./COM-RELATORIO-DE-VISITA";
 import Form_PrestacaoServicoTerceiro from "./ADM-SERVICO_TERCEIRO";
 import Form_OvacaoContainerTerceiros from "./COMEX-OVACAO_CONTAINER_TERCEIROS";
 import Form_SaidasBlocosEstoque from "./ADM-SAIDA_BLOCO_ESTOCAGEM";
@@ -49,18 +49,18 @@ export const forms = [
     path: "/forms/ovacao_container",
     component: Form_OvacaoContainer,
   },
-  // {
-  //   id: "pedido_compra",
-  //   nome: "Ordem de Compra",
-  //   path: "/forms/ordem_compra",
-  //   component: Form_PedidoDeCompra,
-  // },
-  // {
-  //   id: "pedido_venda",
-  //   nome: "Pedido de Venda",
-  //   path: "/forms/pedido_venda",
-  //   component: Form_PedidoDeVenda,
-  // },
+  {
+    id: "pedido_compra",
+    nome: "COM - Ordem de Compra",
+    path: "/forms/ordem_compra",
+    component: Form_PedidoDeCompra,
+  },
+  {
+    id: "relatorio-visita",
+    nome: "COM - Relatório de Visita",
+    path: "/forms/relatorio-visita",
+    component: Form_RelatorioDeVisita,
+  },
   {
     id: "servico_terceiro",
     nome: "ADM - Prestação de Serviço em Terceiros",
@@ -92,8 +92,14 @@ export const forms = [
     component: Form_SolicitacaoCompra,
   },
   {
-    id: "externo",
+    id: "ex_contrl_manutencao",
     nome: "EX - Controle de Manutenção - Keepfy",
     link: "https://app.keepfy.com/service-orders?tab=overview",
+  },
+
+  {
+    id: "ex_sistema_eso",
+    nome: "EX - Sistema ESO - Controle EPI",
+    link: "https://core.sistemaeso.com.br/account/login",
   },
 ];
