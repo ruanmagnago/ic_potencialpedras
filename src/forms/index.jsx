@@ -11,6 +11,8 @@ import Form_OvacaoContainerTerceiros from "./COMEX-OVACAO_CONTAINER_TERCEIROS";
 import Form_SaidasBlocosEstoque from "./ADM-SAIDA_BLOCO_ESTOCAGEM";
 import Form_ProgramacaoViagem from "./COM-PROGRAMACAO_VIAGEM";
 import Form_SolicitacaoCompra from "./COM-SOLICITACAO_COMPRA";
+import Form_EnvioSerrada from "./PRO-ENVIO_SERRADA";
+import Form_ProgramacaoEnvelopamento from "./ADM-PROGRAMACAO_ENVELOPAMENTO";
 
 export const forms = [
   {
@@ -90,6 +92,18 @@ export const forms = [
     nome: "COM - Solicitação de Compras - Insumos/Serviços",
     path: "/forms/solicitacao_compra",
     component: Form_SolicitacaoCompra,
+  },
+  {
+    id: "envio_serrada",
+    nome: "PRO - Envio Ficha de Serrada",
+    path: "/forms/envio_serrada",
+    component: Form_EnvioSerrada,
+  },
+  {
+    id: "prog_envelopamento",
+    nome: "ADM - Programação de Envelopamento",
+    path: "/forms/prog_envelopamento",
+    component: Form_ProgramacaoEnvelopamento,
   },
   {
     id: "ex_contrl_manutencao",
