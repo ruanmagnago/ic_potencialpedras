@@ -140,7 +140,7 @@ export const forms = [
   },
   {
     id: "chegada_bloco",
-    nome: "SER - Chegada de Bloco | Chapa",
+    nome: "SER - Entrada de Bloco | Chapa",
     group: "PRO",
     path: "/forms/chegada_bloco",
     component: Form_ChegadaBloco,
@@ -181,4 +181,5 @@ export const forms = [
   //   link: "https://core.sistemaeso.com.br/account/login",
   // },
 ];
+
 
