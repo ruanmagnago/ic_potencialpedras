@@ -12,12 +12,12 @@ export default function Form_controleTratamento() {
         <Header />
 
         <iframe
-          id="JotFormIFrame-260783357661667"
-          title="PRO-CONTROLE DE PRODUÇÃO REALIZADO EM TERCEIROS"
+          id="JotFormIFrame-260776616399069"
+          title="PRO-CONTROLE DE TRATAMENTO"
           onload="window.parent.scrollTo(0,0)"
           allowtransparency="true"
           allow="geolocation; microphone; camera; fullscreen; payment"
-          src="https://form.jotform.com/260783357661667"
+          src="https://form.jotform.com/260776616399069"
           frameborder="0"
           className="min-w-full max-w-full h-[80vh] border-2 border-neutral-700 "
         ></iframe>

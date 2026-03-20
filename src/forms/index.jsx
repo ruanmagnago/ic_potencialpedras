@@ -17,6 +17,7 @@ import Form_ChegadaBloco from "./SER-CHEGA_DE_BLOCO";
 import Form_InsCarregamento from "./EXP-INSPECAO_CARREGAMENTO";
 import Form_MarcacaoPlaca from "./CAR-MARCACAO_DE_PLACA";
 import Form_controleTratamento from "./PRO-CONTROLE-TRATAMENTO";
+import Form_controleProducaoTerceiros from "./PRO-CONTROLE-PROD-TERCEIRO";
 
 export const forms = [
   {
@@ -164,11 +165,19 @@ export const forms = [
     formId: "252925364785065",
   },
   {
-    id: "controle_trata",
+    id: "controle_tratamento",
     nome: "PRO - Controle de Tratamento",
     path: "/forms/controle-tratamento",
     group: "PRO",
     component: Form_controleTratamento,
+    formId: "260783357661667",
+  },
+  {
+    id: "controle_prod_terceiro",
+    nome: "PRO - Controle de Produção em Terceiros",
+    path: "/forms/controle-prod-terceiro",
+    group: "PRO",
+    component: Form_controleProducaoTerceiros,
     formId: "260783357661667",
   },
   {
@@ -190,5 +199,3 @@ export const forms = [
   //   link: "https://core.sistemaeso.com.br/account/login",
   // },
 ];
-
-
