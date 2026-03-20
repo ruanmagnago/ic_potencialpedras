@@ -16,6 +16,7 @@ import Form_ProgramacaoEnvelopamento from "./ADM-PROGRAMACAO_ENVELOPAMENTO";
 import Form_ChegadaBloco from "./SER-CHEGA_DE_BLOCO";
 import Form_InsCarregamento from "./EXP-INSPECAO_CARREGAMENTO";
 import Form_MarcacaoPlaca from "./CAR-MARCACAO_DE_PLACA";
+import Form_controleTratamento from "./PRO-CONTROLE-TRATAMENTO";
 
 export const forms = [
   {
@@ -161,6 +162,14 @@ export const forms = [
     group: "CAR",
     component: Form_MarcacaoPlaca,
     formId: "252925364785065",
+  },
+  {
+    id: "controle_trata",
+    nome: "PRO - Controle de Tratamento",
+    path: "/forms/controle-tratamento",
+    group: "PRO",
+    component: Form_controleTratamento,
+    formId: "260783357661667",
   },
   {
     id: "ex_contrl_manutencao",
