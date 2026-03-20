@@ -170,7 +170,7 @@ export const forms = [
     path: "/forms/controle-tratamento",
     group: "PRO",
     component: Form_controleTratamento,
-    formId: "260783357661667",
+    formId: "260776616399069",
   },
   {
     id: "controle_prod_terceiro",
