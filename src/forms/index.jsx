@@ -54,7 +54,7 @@ export const forms = [
   },
   {
     id: "admissao_colaborador",
-    nome: "DP - Admissão de Colaboradores",
+    nome: "ADM - Admissão de Colaboradores",
     group: "ADM",
     path: "/forms/admissao_colaborador",
     component: Form_AdmissaoColaborador,
@@ -134,7 +134,7 @@ export const forms = [
   },
   {
     id: "prog_envelopamento",
-    nome: "ADM - Programação de Envelopamento",
+    nome: "PRO - Programação de Envelopamento",
     group: "PRO",
     path: "/forms/prog_envelopamento",
     component: Form_ProgramacaoEnvelopamento,
@@ -142,7 +142,7 @@ export const forms = [
   },
   {
     id: "chegada_bloco",
-    nome: "SER - Entrada de Bloco | Chapa",
+    nome: "PRO - Entrada de Bloco | Chapa",
     group: "PRO",
     path: "/forms/chegada_bloco",
     component: Form_ChegadaBloco,
